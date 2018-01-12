@@ -36,28 +36,46 @@ Want to learn a language used often for building internal software?-->
 
       <!--C#, Java Ruby-->
       <p>What type of company do you want to work for?</p>
-      <select>
-        <option>Select</option>
-        <option>Startups and smaller companies who are looking to build their product quickly</option>
-        <option>Bigger extablished businesses</option>
-        <option>Enterprise-level company, as an Android developer, or in high-performance applications</option>
-      </select>
+      <form>
+        <select id="question1">
+          <option>Select</option>
+          <option class="ruby">Startups and smaller companies who are looking to build their product quickly</option>
+          <option class="c">Bigger extablished businesses</option>
+          <option class="java">Enterprise-level company, as an Android developer, or in high-performance applications</option>
+        </select>
 
-      <p>What type of language do you want to learn?</p>
-      <select>
-        <option>Select</option>
-        <option>One of the most in-demand languages in the job market</option>
-        <option>The most popular of all programming languages that has a broader appeal</option>
-        <option>The favorite language of developers building interactive web applications</option>
-      </select>
+        <p>What type of language do you want to learn?</p>
+        <select id="question2">
+          <option>Select</option>
+          <option class="c">One of the most in-demand languages in the job market</option>
+          <option class="java">The most popular of all programming languages that has a broader appeal</option>
+          <option class="ruby">The favorite language of developers building interactive web applications</option>
+        </select>
 
-      <p>What do you want to do with the language?</p>
-      <select>
-        <option>Select</option>
-        <option>Become an android developer</option>
-        <option>Simplify many of the common tasks associated with building web applications</option>
-        <option>Build internal software</option>
-      </select>
+        <p>What do you want to do with the language?</p>
+        <select id="question3">
+          <option>Select</option>
+          <option class="java">Become an android developer</option>
+          <option class="ruby">Simplify many of the common tasks associated with building web applications</option>
+          <option class="c">Build internal software</option>
+        </select>
+
+        <p>What ?</p>
+        <select id="question4">
+          <option>Select</option>
+
+        </select>
+
+        <p>What ?</p>
+        <select id="question5">
+          <option>Select</option>
+
+        </select>
+
+        <div>
+          <input id="submitAnswers" type="submit" value="Submit">
+        </div>
+      </form>
     </div>
 
   </body>
