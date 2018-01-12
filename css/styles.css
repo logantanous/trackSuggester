@@ -5,3 +5,9 @@ p {
 input {
   margin-top:50px;
 }
+
+select {
+  max-width: 300px;
+  display:flex;
+  flex-direction: column;
+}

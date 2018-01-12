@@ -1,4 +1,29 @@
 $(document).ready(function() {
+
+  //randomize answers utilizing https://css-tricks.com/snippets/jquery/shuffle-dom-elements/
+  (function($){
+      $.fn.shuffle = function() {
+          var allElems = this.get(),
+              getRandom = function(max) {
+                  return Math.floor(Math.random() * max);
+              },
+              shuffled = $.map(allElems, function(){
+                  var random = getRandom(allElems.length),
+                      randEl = $(allElems[random]).clone(true)[0];
+                  allElems.splice(random, 1);
+                  return randEl;
+             });
+          this.each(function(i){
+              $(this).replaceWith($(shuffled[i]));
+          });
+          return $(shuffled);
+      };
+  })(jQuery);
+  $('select option:not(.first)').shuffle();
+
+
+  //start of scoring
+
   $("#submitAnswers").click(function(event) {
 
     var javaScore = 0;
@@ -23,6 +48,8 @@ $(document).ready(function() {
       if (answer == "ruby") {rubyScore++;}
       if (answer == "java") {javaScore++;}
       if (answer == "php") {phpScore++;}
+
+
       k++;
     }
 
@@ -36,4 +63,6 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+
 });

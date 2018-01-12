@@ -11,23 +11,6 @@
     <title>Epicodus Track Suggester</title>
   </head>
   <body>
-    <!--create a Track Suggester webpage (using HTML, CSS, JavaScript and jQuery)
-that asks future students a series of questions about themselves
-and provides a track suggestion based on their answers
-ask questions about the languages themselves, the kinds of environments where these languages are used, or anything else you find relevant.-->
-
-<!--Do you plan on working for bigger extablished businesses? c#
-most popular with startups and smaller companies who are looking to build their product quickly. Ruby
-interested in working for an enterprise-level company, as an Android developer, or in high-performance applications? Java
-
-Do you want to learn one of the most in-demand languages in the job market? c#
-learn one of the most popular of all programming languages that has a broader appeal? Java
-Want to learn the favorite language of developers building interactive web applications? Ruby
-
-
-Want to be an android developer? java
-Want to learn the language that simplified many of the common tasks associated with building web applications? ruby
-Want to learn a language used often for building internal software?-->
 
     <div class="container">
 
@@ -38,7 +21,7 @@ Want to learn a language used often for building internal software?-->
       <p>What type of company do you want to work for?</p>
       <form>
         <select id="question1">
-          <option>Select</option>
+          <option class="first">Select</option>
           <option value="ruby">Startups and smaller companies</option>
           <option value="c">Bigger extablished businesses</option>
           <option value="php">A fast paced agency</option>
@@ -47,7 +30,7 @@ Want to learn a language used often for building internal software?-->
 
         <p>What type of language do you want to learn?</p>
         <select id="question2">
-          <option>Select</option>
+          <option class="first">Select</option>
           <option value="c">One of the most in-demand languages in the job market</option>
           <option value="java">The most popular of all programming languages that has a broader appeal</option>
           <option value="ruby">The favorite language of developers building interactive web applications</option>
@@ -56,7 +39,7 @@ Want to learn a language used often for building internal software?-->
 
         <p>What do you want to do with the language?</p>
         <select id="question3">
-          <option>Select</option>
+          <option class="first">Select</option>
           <option value="php">Builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations</option>
           <option value="java">Become an android developer</option>
           <option value="ruby">Build web applications with a language that simplifies many of the common tasks associated. </option>
@@ -65,16 +48,16 @@ Want to learn a language used often for building internal software?-->
 
         <p>What language sounds better suited for you? A language that...</p>
         <select id="question4">
-          <option>Select</option>
+          <option class="first">Select</option>
           <option value="c">has the backing of Microsoft</option>
           <option value="java">is used in many applications</option>
           <option value="ruby">is used to build the companies' product quickly</option>
           <option value="php">is best known for it's use in content management systems like Wordpress, Drupal, and Joomla</option>
         </select>
 
-        <p>Which grouping of companies would you rather work for? (Most are companies who have hired Epicodus graduates after their course)</p>
+        <p>Which grouping of companies would you rather work for?<br>(Most are companies who have hired Epicodus graduates after their course)</p>
         <select id="question5">
-          <option>Select</option>
+          <option class="first">Select</option>
           <option value="java">Nike and Thetus</option>
           <option value="php">Marketo, Graybox, Dexcom</option>
           <option value="c">Windsor and Incomm</option>
