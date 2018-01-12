@@ -1,5 +1,7 @@
 body {margin-top: 25px;}
 
+h1 {margin-bottom: 25px;}
+
 p {
   margin-top: 30px;
 }
@@ -43,3 +45,19 @@ select {
 }
 
 .hide {display: none;}
+
+.col+.col {
+  text-align: right;
+  margin-bottom: 50px;
+}
+
+.items .item {
+  position: relative;
+  right: 0px;
+  float: right;
+  clear: both;
+}
+
+#bottomMarker {
+  margin-top:50px;
+}

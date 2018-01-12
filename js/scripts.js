@@ -59,10 +59,10 @@ $(document).ready(function() {
     if (answered == "False") {
       alert("Some questions were not answered.");
     } else {
-      $(".hide").show();      
+      $(".hide").show();
       $(".item span").remove();
       if (javaScore>0) {
-        $(".java").show().css("width", javaScore+"00px").append('<span> '+cScore+"/"+questions.length+'</span>');
+        $(".java").show().css("width", javaScore+"00px").append('<span> '+javaScore+"/"+questions.length+'</span>');
       }
       if (cScore>0) {
         $(".c").show().css("width", cScore+"00px").append('<span> '+cScore+"/"+questions.length+'</span>');
