@@ -19,8 +19,13 @@ $(document).ready(function() {
           return $(shuffled);
       };
   })(jQuery);
-  $('select option:not(.first)').shuffle();
 
+  var questions = $("select");
+  var k = 1;
+  for (var i = 0; i < questions.length; i++) {
+    $("select#question"+k+" option:not(.first)").shuffle();
+    k++;
+  }
 
   //start of scoring
 
