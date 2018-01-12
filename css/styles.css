@@ -1,3 +1,5 @@
+body {margin-top: 25px;}
+
 p {
   margin-top: 30px;
 }
@@ -11,3 +13,33 @@ select {
   display:flex;
   flex-direction: column;
 }
+
+.answerForm .item {
+  height: 50px;
+  width: 0px;
+  display:none;
+}
+
+.java {background-color: #E11F21;}
+.php {background: #0A6EB6}
+.ruby {background: #CC0000}
+.c {background: #68217A}
+
+.answerForm {
+  margin-bottom:50px;
+  margin-top: 50px;
+}
+
+.answerForm h6 {margin-bottom:25px;}
+
+.answerForm .item {
+  margin-top: 15px;
+  padding: 10px;
+  color: white;
+}
+
+#submitAnswers {
+  margin-bottom: 35px;
+}
+
+.hide {display: none;}
