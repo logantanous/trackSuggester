@@ -4,6 +4,7 @@ $(document).ready(function() {
     var javaScore = 0;
     var cScore = 0;
     var rubyScore = 0;
+    var phpScore = 0;
 
     var questions = $("select");
 
@@ -21,14 +22,14 @@ $(document).ready(function() {
       if (answer == "c") {cScore++;}
       if (answer == "ruby") {rubyScore++;}
       if (answer == "java") {javaScore++;}
-
+      if (answer == "php") {phpScore++;}
       k++;
     }
 
     if (answered == "False") {
       alert("Some questions were not answered.");
     } else {
-      alert("cScore"+cScore+" rubyScore"+rubyScore+" javaScore"+javaScore);
+      alert("cScore"+cScore+" rubyScore"+rubyScore+" javaScore"+javaScore+" phpScore"+phpScore);
 
     }
 
