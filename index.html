@@ -6,20 +6,28 @@
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
     <title>Epicodus Track Suggestion</title>
   </head>
   <body>
+    <header>
+      <img src="https://static1.squarespace.com/static/5524448ee4b0d6f6b83ab9e2/t/57cf3de246c3c4d2933aa57c/1515106747397/?format=1500w" alt="">
+    </header>
+
+    <div class="container hero-box">
+      <center>
+        <h1>What Programming Language Should I Learn?</h1>
+      </center>
+    </div>
 
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1>Epicodus Track Suggester</h1>
           <div class="questionForm">
-            <h6>Answer the below questions to help you find out which Epicodus track you belong to:</h6>
             <p>What type of company do you want to work for?</p>
-            <form action="#bottomMarker">
+            <form>
               <select id="question1">
                 <option class="first">Select</option>
                 <option value="ruby">Startups and smaller companies</option>
@@ -66,14 +74,13 @@
 
               <div>
                 <input id="submitAnswers" type="submit" value="Submit">
-                <hr>
               </div>
             </form>
           </div><!--End of questionForm div-->
         </div><!--End of this col-->
-        <div class="col">
+        <div class="col hide">
           <div class="answerForm">
-            <h6 class="hide">View results based on your answers:</h6>
+            <h6>View results based on your answers:</h6>
             <div class="items">
               <div class="item java">Java</div>
               <div class="item php">PHP</div>
@@ -85,6 +92,8 @@
         </div><!--End of this col-->
       </div><!--End of row-->
     </div><!--End of container-->
-
+    <hr>
+    <div class="between"></div>
+    <hr>
   </body
 </html>

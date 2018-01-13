@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  $(".first").remove();
+  //$(".first").remove();//Remove for quick debugging
+
   //randomize answers utilizing https://css-tricks.com/snippets/jquery/shuffle-dom-elements/
   (function($){
       $.fn.shuffle = function() {
@@ -58,7 +59,7 @@ $(document).ready(function() {
     }
 
     if (answered == "False") {
-      alert("Some questions were not answered.");
+      alert("Please answer all questions");
     } else {
       $(".hide").fadeIn(1000);
       $(".answerForm").fadeIn(1000);
